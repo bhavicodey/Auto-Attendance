@@ -1,3 +1,6 @@
-# ISmile
+# Auto Attendance
 
-ISmile is a feature where we replace the traditional old input password, with an additional smile authentication. In order to login, you need to show a grin.
+
+Auto Attendance is a web application that automizes the basic attendance roll-calling in the standard method. This reduces the time, mistakes and 
+problematic possibilities.
+
