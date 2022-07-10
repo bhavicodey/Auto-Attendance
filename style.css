@@ -1,0 +1,71 @@
+body
+{
+  color: black;   
+  background-color: black;
+  background-image: url('windows_background.png');
+  background-repeat: no-repeat;
+  background-size: 1600px, 500px;
+}
+.heading
+{
+  width: 80%;
+  font-size: 22px;
+}
+#camera
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px;
+}
+.name_of_objects, #result_object_name  , #result_object_accuracy
+{
+  color: rgb(12, 69, 118);
+}
+
+#guest {
+    width: 200px;
+    height: 200px;
+}
+img {
+    border-radius: 50%;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: white;
+  }
+
+  
+  #name {
+    text-align: left;
+  }
+
+  #login {
+    margin: 30px;
+  }
+  #retake {
+    margin: 30px;
+  }
+
+  #cancel {
+    margin: 30px;
+  }

@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+ 
+  </head>
+  <ul>
+    <li><a href="default.asp">Home</a></li>
+    <li><a href="news.asp">Attendence (For Students)</a></li>
+    <li><a href="contact.asp">Initiative</a></li>
+    <li style="float:right"><a class="active" href="#about"> Linkedin E-Learning </a></li>
+    <img src="LinkedIn.png" style="float:right" width="50px" height="50px">
+
+  </ul> 
+  <body>
+  <div class="container">
+   
+    <center>
+     <br>
+     <input style="float: left" type="text" id="currentDate">
+     <br><br>
+     <script>
+       var today = new Date();
+       var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+       document.getElementById("currentDate").value = date;
+     </script>
+     <input style="float: left"  type="text" id="currentTime">
+     <br><br>
+     <script>
+     var today = new Date();
+     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+       document.getElementById("currentTime").value = time;
+     </script>
+     
+
+
+    <br>
+   
+    <p style="font-size: 30px;"> </p>
+    <p style="font-size: 22px;" id="name" style="float: left"> <span id="result_object_name"></span> </p>
+      <div id="camera" style="float: left"></div>
+      <br>
+      
+    
+      <div id="result"></div>
+      <br>
+      
+      <p style="font-size: 22px;"> <span id="spark"></span> </p>
+
+
+  </div>
+  <br>
+  <button onclick="check();" id="login" style="float: left" class="btn btn-success">    Login?</button>
+  <button onclick="check();" id="retake" style="float: left" class="btn btn-warning">    Retake</button>
+  <button onclick="location.reload();" id="cancel" style="float: left" class="btn btn-danger">    Close</button>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
